@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 source "https://rubygems.org"
 
 ruby "3.2.2"
@@ -66,3 +67,10 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+=======
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+gem 'rubocop', '>= 1.0', '< 2.0'
+# gem "rails"
+>>>>>>> a2625a8dd382b13b636a4e1490993ff94cea70a6
