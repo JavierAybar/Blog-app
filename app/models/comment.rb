@@ -4,6 +4,7 @@ class Comment < ApplicationRecord
 
   # Callback
   after_save :updates_comments_counter
+  after_destroy :update_comments_counter
 
   # Methods
   def updates_comments_counter
