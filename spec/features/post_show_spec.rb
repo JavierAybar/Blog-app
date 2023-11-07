@@ -13,4 +13,8 @@ RSpec.describe 'Post show page', type: :feature do
       expect(page).to have_content(post.title)
     end
     
+    it 'Display who wrote the post' do
+        visit user_post_path(user, post)
+        expect(page).to have_content("by #{user.name}")
+    end
 end
