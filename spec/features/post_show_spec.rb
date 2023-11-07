@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 RSpec.describe 'Post show page', type: :feature do
   let(:user) { User.create(name: 'Tobias Boon', id: 1, post_counter: 1, bio: 'Bio text 1', photo: 'https://plus.unsplash.com/premium_photo-1690481529194-6087914e096e?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' ) }
   let!(:post) { Post.create(title: 'First post', text: 'test text', author_id: user.id, comments_counter: 5, likes_counter: 0) }
