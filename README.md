@@ -88,20 +88,23 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  rails test
+  rspec spec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
-### Author:
-
 👤 **Javier Aybar**
 
 - GitHub: [@JavierAybar](https://github.com/JavierAybar)
 - LinkedIn: [@JavierAybar](https://www.linkedin.com/in/javier-aybar-932376274/)
 
+👤 **Iván Gonzalez**
+
+- GitHub: [@ivangonzalez224](https://github.com/ivangonzalez224)
+- Twitter: [@Ivan Gonzalez](https://twitter.com/ivang2204)
+- LinkedIn: [Iván Gonzalez Robles](https://www.linkedin.com/in/iván-gonzalez-robles-957491275/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
