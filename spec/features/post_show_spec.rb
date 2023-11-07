@@ -26,5 +26,10 @@ RSpec.describe 'Post show page', type: :feature do
     it 'Display how many likes it has' do
         visit user_post_path(user, post)
         expect(page).to have_content("Likes: #{post.likes_counter}")
-      end
+    end
+
+    it 'Displat the post body' do
+        visit user_post_path(user, post)
+        expect(page).to have_content(post.text)
+    end
 end
