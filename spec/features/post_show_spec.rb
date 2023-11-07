@@ -28,8 +28,24 @@ RSpec.describe 'Post show page', type: :feature do
         expect(page).to have_content("Likes: #{post.likes_counter}")
     end
 
-    it 'Displat the post body' do
+    it 'Display the post body' do
         visit user_post_path(user, post)
         expect(page).to have_content(post.text)
+    end
+
+    describe 'Display the username and comment of each commentor' do
+        before do
+          user_test1 = User.create(name: 'John Doe', id: 3, post_counter: 1, bio: 'Bio text 1', photo: '...')
+          user_test2 = User.create(name: 'Miguel Angel', id: 4, post_counter: 1, bio: 'Bio text 1', photo: '...')
+          post_test = Post.create(title: 'First post', text: 'test text', author_id: user_test1.id, comments_counter: 5, likes_counter: 0)
+          Comment.create(user_id: user_test1.id, post_id: post_test.id, text: 'First comment')
+          Comment.create(user_id: user_test2.id, post_id: post_test.id, text: 'Second comment')
+          visit user_post_path(user_test1, post_test)
+        end
+        
+        it 'displays the username of each commentor' do
+          expect(page).to have_content('John Doe')
+          expect(page).to have_content('Miguel Angel')
+        end
     end
 end
