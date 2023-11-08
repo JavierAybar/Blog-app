@@ -157,3 +157,37 @@
   color: white;
   font-size: 0.8rem;
 }
+
+/* Log in  */
+.inputs-log-in {
+  width: 450px;
+  height: 30px;
+}
+
+.btn-log-in {
+  width: 450px;
+  margin-top: 15px;
+  height: 30px;
+}
+
+.log-in-title {
+  font-size: 1.8rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Sing up */
+.input-sing-up {
+  width: 450px;
+  height: 30px;
+}
+
+.sing-up-btn {
+  width: 450px;
+  margin-top: 15px;
+  height: 30px;
+}
+
+.sing-out-btn {
+  width: 150px;
+  height: 30px;
+}
