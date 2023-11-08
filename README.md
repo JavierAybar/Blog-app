@@ -106,6 +106,12 @@ To run tests, run the following command:
 - Twitter: [@Ivan Gonzalez](https://twitter.com/ivang2204)
 - LinkedIn: [Iván Gonzalez Robles](https://www.linkedin.com/in/iván-gonzalez-robles-957491275/)
 
+👤 **Bruno Kambere**
+
+- GitHub: [@kambereBr](https://github.com/kambereBr)
+- Twitter: [@kambereBr](https://twitter.com/kambereBr)
+- LinkedIn: [bruno kambere](https://www.linkedin.com/in/bruno-kambere/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
