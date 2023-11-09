@@ -10,6 +10,9 @@
       </div>
     </a>
   </section>
+  <a href="<%= new_user_post_path(@user) %>">
+  <button class="create-post-btn">Create new post</button>
+</a>
   <div class="bio-container">
     <h4>Bio</h4>
     <p><%= @user.bio %></p>
@@ -18,6 +21,9 @@
     <% @user.three_most_recent_post.each_with_index do |post, index| %>
     <a href="<%= user_post_path(@user, post) %>">
       <div class="simple-post">
+   <% if can? :destroy, post %>
+     <%= button_to "Delete", user_post_path(@user, post), method: :delete,  data: { turbo_method: :delete, confirm: 'Are you sure?' } %>
+   <% end %>
         <h4><%= post.title %> #<%= index + 1 %></h4>
         <p><%= post.text %></p>
         <div class="comments-likes">

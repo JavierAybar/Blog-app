@@ -3,8 +3,11 @@
    <h4><%= @post.title %> by <%= @user.name %></h4>
    <div class="details-post-comments-counter">
    
+   <% if can? :destroy, @post %>
+     <%= button_to "Delete", user_post_path(@user, @post), method: :delete,  data: { turbo_method: :delete, confirm: 'Are you sure?' }%>
+   <% end %>
    <%= form_with model: @like, url: user_post_likes_path(@user, @post) do |form| %>
-  <%= form.submit "Me gusta" %>
+   <%= form.submit "Like" %>
 <% end %>
 
 
@@ -18,6 +21,7 @@
 <div class="details-comments">
 <% @post.comments.each do |comment| %>
    <span><%= comment.user.name %>: <%= comment.text %></span>
+
 <% end %>
 </div>
 </section>
