@@ -11,6 +11,7 @@ class Post < ApplicationRecord
 
   # Callback
   after_save :updates_user_posts_counter
+  after_destroy :updates_user_posts_counter
 
   # Methods
   def updates_user_posts_counter
