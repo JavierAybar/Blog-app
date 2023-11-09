@@ -4,8 +4,8 @@ ruby '3.2.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'cancancan'
-gem 'hotwire-rails'
 gem 'devise'
+gem 'hotwire-rails'
 gem 'letter_opener'
 gem 'rails', '~> 7.1.1'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
